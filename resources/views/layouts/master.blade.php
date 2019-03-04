@@ -11,7 +11,6 @@
   <link rel="apple-touch-icon-precomposed" href="">
   <title>メディア投稿サイト -@yield('title')-</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.3/dist/css/modaal.min.css">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/pagination.css') }}">
 </head>
@@ -94,7 +93,6 @@
     &copy;All Rights Reserve.
   </footer>
   <script src="{{ asset('js/main.js') }}"></script>
-  <script src='https://cdn.jsdelivr.net/npm/modaal@0.4.3/dist/js/modaal.min.js'></script>
 </body>
 
 </html>
