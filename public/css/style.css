@@ -551,6 +551,10 @@ img {
   width: 60%;
 }
 
+.hasError {
+  color: red;
+}
+
 .p-post__header {
   display: -webkit-box;
   display: -ms-flexbox;
