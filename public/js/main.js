@@ -10439,7 +10439,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(8);
+module.exports = __webpack_require__(10);
 
 
 /***/ }),
@@ -10453,6 +10453,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_fixFooter__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_showMsg__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_confirm__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_load__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modules_modal__ = __webpack_require__(9);
+
+
 
 
 
@@ -10464,6 +10468,8 @@ Object(__WEBPACK_IMPORTED_MODULE_1__modules_prevImg__["a" /* default */])();
 Object(__WEBPACK_IMPORTED_MODULE_2__modules_fixFooter__["a" /* default */])();
 Object(__WEBPACK_IMPORTED_MODULE_3__modules_showMsg__["a" /* default */])();
 Object(__WEBPACK_IMPORTED_MODULE_4__modules_confirm__["a" /* default */])();
+Object(__WEBPACK_IMPORTED_MODULE_5__modules_load__["a" /* default */])();
+Object(__WEBPACK_IMPORTED_MODULE_6__modules_modal__["a" /* default */])();
 
 /***/ }),
 /* 3 */
@@ -10605,6 +10611,61 @@ function confirm() {
 
 /***/ }),
 /* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+function load() {
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function () {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(window).on('load', function () {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-load-bg').hide();
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-hero-anime').addClass('animated rollIn');
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-show-header').addClass('animated fadeIn delay-1s');
+    });
+  });
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (load);
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+function modal() {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function () {
+
+        // モーダルウィンドウが開くときの処理    
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modalOpen").click(function () {
+
+            var navClass = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).attr("class"),
+                href = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).attr("href");
+
+            __WEBPACK_IMPORTED_MODULE_0_jquery___default()(href).fadeIn();
+            __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).addClass("open");
+            return false;
+        });
+
+        // モーダルウィンドウが閉じるときの処理    
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modalClose").click(function () {
+            __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).parents(".modal").fadeOut();
+            __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modalOpen").removeClass("open");
+            return false;
+        });
+    });
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (modal);
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
