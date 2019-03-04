@@ -4,6 +4,7 @@
 @section('content')
 
 <div class="c-container-fluid">
+  <h2 class="c-container__title">投稿記事一覧</h2>
   <div id="container-3column">
   
     <main class="c-main" id="main">
