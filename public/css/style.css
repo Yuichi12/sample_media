@@ -667,6 +667,33 @@ img {
   margin-top: 4rem;
 }
 
+.p-admin-main {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.p-admin-unlock {
+  background: green;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.p-admin-unlock:hover {
+  color: #fff;
+}
+
+.p-admin-ban {
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.p-admin-ban:hover {
+  color: #fff;
+}
+
 .p-footer {
   background: #e00b0b;
   color: #fff;
