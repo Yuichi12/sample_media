@@ -54,7 +54,7 @@
   <section class="p-hero">
   <h2 class="p-hero-title">ポートフォリオ用に作成したシンプルな記事投稿サービスです。</h2>
 
-  <p class="p-hero-text">フレームワークはLaravel5.5、cssプリプロセッサはSassを使用しています。</p>
+  <p class="p-hero-text">フレームワークはLaravel5.5、CSSプリプロセッサはSassを使用しています。</p>
   <p class="p-hero-text">ローカルでの開発環境はDocker、本番環境はさくらのVPS、LAMP環境です。</p>
   
   <p class="p-hero-text">未ログインでも、記事一覧と記事詳細画面は閲覧可能です。その他の機能は会員のみ可能です。</p>
@@ -80,7 +80,7 @@
   </ul>
   </div>
   <p class="p-hero-text">管理ユーザーには新規登録画面は用意しておりません。下記メールアドレスとパスワードでリンク先から管理ユーザーとしてログイン出来ます。</p>
-  <p class="p-hero-text">メールアドレス:example100@gmail.com<br>パスワード:password</p>
+  <p class="p-hero-text">メールアドレス:example100@gmail.com<br>パスワード:secret</p>
   <a href="{{ route('admin.login') }}" class="p-hero-link">管理ユーザーログインはこちら</a>
 </section>
 
