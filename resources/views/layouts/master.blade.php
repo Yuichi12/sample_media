@@ -81,7 +81,7 @@
   </div>
   <p class="p-hero-text">管理ユーザーには新規登録画面は用意しておりません。下記メールアドレスとパスワードでリンク先から管理ユーザーとしてログイン出来ます。</p>
   <p class="p-hero-text">メールアドレス:example100@gmail.com<br>パスワード:password</p>
-  <a href="https://yuichilog.com/admin/login" class="p-hero-link">管理ユーザーログインはこちら</a>
+  <a href="{{ route('admin.login') }}" class="p-hero-link">管理ユーザーログインはこちら</a>
 </section>
 
 </div>
