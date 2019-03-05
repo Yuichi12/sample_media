@@ -230,7 +230,7 @@ class UserController extends Controller
             Log::debug('パスワードがあります。');
             $user->password = Hash::make($request->input('pass_new'));
             $user->save();
-            Log::debug('2パスワードの中身'. print_r($user->password,true));
+            
             // リダイレクト
             return redirect()->route('user.mypage')->with('message', 'パスワードを変更しました');
 
