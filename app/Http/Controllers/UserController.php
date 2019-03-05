@@ -124,6 +124,20 @@ class UserController extends Controller
         return redirect()->route('user.login');
     }
 
+    // ユーザーページ画面を返す
+    public function getProfile($user_id)
+    {
+        // もしログインしているユーザーと同じならマイページへリダイレクト
+        if($user_id === Auth::id()){
+            return redirect()->route('user.mypage');
+        }
+
+        $posts = Post::where('user_id', $user_id)->paginate(5);
+        $user = User::find($user_id);
+
+        return view('user.profile')->with('dbUserData', $user)->with('dbPostData', $posts);
+    }
+
     // ユーザーマイページ画面を返す
     public function getMypage()
     {

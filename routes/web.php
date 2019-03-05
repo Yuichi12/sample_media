@@ -68,6 +68,11 @@ Route::group(['middleware' => 'auth'], function(){
         ]);
         Route::post('contact', 'UserController@postContact');
 
+        Route::get('profile/{user_id}', [
+            'uses' => 'UserController@getProfile',
+            'as' => 'user.profile'
+        ]);
+
     });
     Route::get('logout', [
             'uses' =>'UserController@getLogout',
