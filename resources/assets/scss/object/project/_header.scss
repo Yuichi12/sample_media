@@ -15,15 +15,40 @@
       color: #fff;
     }
   }
+  &__nav {
+    @include mq(md) {
+      background: rgba(255, 255, 255, .85);
+      height: 100vh;
+      position: fixed;
+      left: 100%;
+      top: -100%;
+      transition: all .6s;
+      width: 100%;
+      z-index: 1;
+      &.active {
+      left: 0;
+      top: 0;
+      transition: all .6s;
+      }
+    }
+  }
 }
 
 .p-menu {
 
   display: flex;
   height: 100%;
+  @include mq(md){
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &-item {
     line-height: 6.5rem;
+    @include mq(md){
+
+    }
   }
 
   &-link {
@@ -31,6 +56,11 @@
     display: block;
     padding-left: $space_xl;
     padding-right: $space_xl;
+    @include mq(md){
+      color: #000;
+      font-size: $font-size_xl;
+      font-weight: 600;
+    }
 
     &:hover {
       background: #fff;
