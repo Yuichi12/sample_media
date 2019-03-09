@@ -32,13 +32,19 @@
       MEDIA
     </a>
     </div>
-    <nav class="p-header__nav">
+
+    <div class="c-menu-trigger js-toggle-sp-menu">
+      <span class="c-menu-trigger__bar"></span>
+      <span class="c-menu-trigger__bar"></span>
+      <span class="c-menu-trigger__bar"></span>
+    </div>
+
+    <nav class="p-header__nav js-toggle-bg">
       <ul class="p-menu">
         <li class="p-menu-item"><a href="#modal01" class="p-menu-link js-modal modalOpen">このサイトについて</a></li>
         @if(!Auth::check())
         <li class="p-menu-item"><a href="{{ route('user.signup') }}" class="p-menu-link">サインイン</a></li>
         <li class="p-menu-item"><a href="{{ route('user.login') }}" class="p-menu-link">ログイン</a></li>
-        
         @else
         <li class="p-menu-item"><a href="{{ route('user.mypage') }}" class="p-menu-link">マイページ</a></li>
         <li class="p-menu-item"><a href="{{ route('user.logout') }}" class="p-menu-link">ログアウト</a></li>

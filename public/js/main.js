@@ -10439,7 +10439,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(10);
+module.exports = __webpack_require__(11);
 
 
 /***/ }),
@@ -10455,6 +10455,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_confirm__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_load__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modules_modal__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modules_toggleMenu__ = __webpack_require__(10);
+
 
 
 
@@ -10470,6 +10472,7 @@ Object(__WEBPACK_IMPORTED_MODULE_3__modules_showMsg__["a" /* default */])();
 Object(__WEBPACK_IMPORTED_MODULE_4__modules_confirm__["a" /* default */])();
 Object(__WEBPACK_IMPORTED_MODULE_5__modules_load__["a" /* default */])();
 Object(__WEBPACK_IMPORTED_MODULE_6__modules_modal__["a" /* default */])();
+Object(__WEBPACK_IMPORTED_MODULE_7__modules_toggleMenu__["a" /* default */])();
 
 /***/ }),
 /* 3 */
@@ -10677,6 +10680,38 @@ function modal() {
 
 /***/ }),
 /* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+function toggleMenu() {
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function () {
+
+    var $trigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-toggle-sp-menu');
+    var $menuLink = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-menu-link');
+    var $toggleBg = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-toggle-bg');
+    var $toggleTarget = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-toggle-target');
+
+    $trigger.on('click', function () {
+      $trigger.toggleClass('active');
+      $toggleBg.toggleClass('active');
+      $toggleTarget.toggleClass('active');
+    });
+    $menuLink.on('click', function () {
+      $trigger.toggleClass('active');
+      $toggleBg.toggleClass('active');
+      $toggleTarget.toggleClass('active');
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (toggleMenu);
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

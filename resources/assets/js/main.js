@@ -5,6 +5,7 @@ import showMsg from './modules/showMsg';
 import confirm from './modules/confirm';
 import load from './modules/load';
 import modal from './modules/modal';
+import toggleMenu from './modules/toggleMenu';
 
 count();
 prevImg();
@@ -13,3 +14,4 @@ showMsg();
 confirm();
 load();
 modal();
+toggleMenu();
