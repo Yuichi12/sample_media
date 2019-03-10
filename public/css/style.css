@@ -653,7 +653,7 @@ img {
 }
 
 .modal .inner {
-  position: fixed;
+  position: absolute;
   z-index: 11;
   top: 50%;
   left: 50%;
@@ -672,9 +672,15 @@ img {
 @media screen and (max-width: 768px) {
   .modal .inner {
     left: 40%;
+    top: 60%;
+    -webkit-transform: translage(-40%, -50%);
+            transform: translage(-40%, -50%);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .modal .inner {
     top: 40%;
-    -webkit-transform: translage(-40%, -45%);
-            transform: translage(-40%, -45%);
   }
 }
 
@@ -710,6 +716,24 @@ img {
 
 @media screen and (max-width: 768px) {
   .p-header__nav {
+    position: absolute;
+    top: -200%;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .p-header__nav.active {
+    left: 0;
+    top: 10%;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-header__overray {
     background: rgba(255, 255, 255, 0.85);
     height: 100vh;
     position: fixed;
@@ -721,7 +745,7 @@ img {
     z-index: 1;
   }
 
-  .p-header__nav.active {
+  .p-header__overray.active {
     left: 0;
     top: 0;
     -webkit-transition: all .6s;

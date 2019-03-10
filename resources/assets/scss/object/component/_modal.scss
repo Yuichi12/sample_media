@@ -21,7 +21,7 @@
  
 
 .modal .inner {
-  position: fixed;
+  position: absolute;
   z-index:11;
   top:50%;
   left:50%;
@@ -32,8 +32,11 @@
   }
   @include mq(md){
     left: 40%;
+    top: 60%;
+    transform: translage(-40%, -50%);
+  }
+  @include mq(sm){
     top: 40%;
-    transform: translage(-40%, -45%);
   }
 }
 

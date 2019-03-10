@@ -52,8 +52,8 @@
         font-size: $font-size_m;
       }
       @include mq(sm){
-        font-size: $font-size_s;
-        letter-spacing: 1px;
+        font-size: $font-size_xs;
+        letter-spacing: 1;
       }
     }
   }

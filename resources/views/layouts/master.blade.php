@@ -39,6 +39,8 @@
       <span class="c-menu-trigger__bar"></span>
     </div>
 
+    <div class="p-header__overray js-toggle-bg"></div>
+    
     <nav class="p-header__nav js-toggle-bg">
       <ul class="p-menu">
         <li class="p-menu-item"><a href="#modal01" class="p-menu-link js-modal modalOpen">このサイトについて</a></li>

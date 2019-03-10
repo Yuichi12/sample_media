@@ -16,6 +16,22 @@
     }
   }
   &__nav {
+    @include mq(md){
+      
+      position: absolute;
+      top: -200%;
+      transition: all .6s;
+      width: 100%;
+      z-index: 3;
+      &.active {
+        
+        left: 0;
+        top: 10%;
+        transition: all .6s;
+      }
+    }
+  }
+  &__overray {
     @include mq(md) {
       background: rgba(255, 255, 255, .85);
       height: 100vh;
