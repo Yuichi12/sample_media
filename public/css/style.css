@@ -536,9 +536,10 @@ img {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .c-side-prof__name {
     font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 }
 
