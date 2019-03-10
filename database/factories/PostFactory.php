@@ -6,7 +6,7 @@ $factory->define(App\Post::class, function (Faker $faker) {
     
     return [
         'user_id' => $faker->numberBetween(1,10),
-        'title' => $faker->realText(20),
-        'content' => $faker->realText(),
+        'title' => 'サンプルタイトルサンプルタイトル',
+        'content' => 'サンプルコンテンツサンプルコンテンツサンプルコンテンツサンプルコンテンツサンプルコンテンツサンプルコンテンツサンプルコンテンツ',
     ];
 });
