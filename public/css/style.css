@@ -442,6 +442,12 @@ img {
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .c-side-prof {
+    display: none;
+  }
+}
+
 .c-side-prof__name {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -463,6 +469,12 @@ img {
   border-left: 2px solid #000;
   border-right: 2px solid #000;
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .c-side-menu {
+    display: none;
+  }
 }
 
 .c-side-menu-item {
@@ -588,6 +600,16 @@ img {
 
 .p-menu-item {
   line-height: 6.5rem;
+}
+
+.p-menu-item-sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .p-menu-item-sp {
+    display: block;
+  }
 }
 
 .p-menu-link {

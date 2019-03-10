@@ -48,6 +48,12 @@
         @else
         <li class="p-menu-item"><a href="{{ route('user.mypage') }}" class="p-menu-link">マイページ</a></li>
         <li class="p-menu-item"><a href="{{ route('user.logout') }}" class="p-menu-link">ログアウト</a></li>
+
+        <li class="p-menu-item p-menu-item-sp"><a href="{{ route('user.post_article') }}" class="p-menu-link">記事を投稿する</a></li>
+        <li class="p-menu-item p-menu-item-sp"><a href="{{ route('user.prof_edit') }}" class="p-menu-link">プロフィール編集</a></li>
+        <li class="p-menu-item p-menu-item-sp"><a href="{{ route('user.pass_edit') }}" class="p-menu-link">パスワード変更</a></li>
+        <li class="p-menu-item p-menu-item-sp"><a href="{{ route('user.contact') }}" class="p-menu-link">管理者へお問い合わせ</a></li>
+        <li class="p-menu-item p-menu-item-sp"><a href="{{ route('user.with_draw') }}" class="p-menu-link">退会する</a></li>
         @endif
       </ul>
     </nav>
