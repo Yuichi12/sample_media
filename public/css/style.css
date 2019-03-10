@@ -306,6 +306,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .c-card {
+    height: 8rem;
     padding: 3px;
   }
 }
@@ -370,7 +371,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .c-card__title {
-    font-size: 1.2rem;
+    font-size: 5px;
     letter-spacing: 1px;
     line-height: 1.2;
   }
@@ -398,7 +399,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .c-card__footer {
-    font-size: 5px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 }
@@ -576,8 +577,8 @@ img {
 
 @media screen and (max-width: 414px) {
   .c-side-prof__text {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-size: 5px;
+    letter-spacing: 1;
   }
 }
 
