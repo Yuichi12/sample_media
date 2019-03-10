@@ -46,8 +46,12 @@
 
   &-item {
     line-height: 6.5rem;
-    @include mq(md){
 
+    &-sp {
+      display: none;
+      @include mq(md){
+        display: block;
+      }
     }
   }
 
