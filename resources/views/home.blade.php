@@ -17,7 +17,9 @@
           <div class="c-card__header">
             <h3 class="c-card__title">{{ str_limit($post->title, 50) }}</h3>
           </div>
+          <p class="c-card__content">
           {{ str_limit($post->content, 40) }}
+          </p>
           <div class="c-card__footer">
             <div class="c-card__author">
               {{ $post->user->userName() }}
