@@ -26,6 +26,15 @@
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
+  @include mq(lg){
+    transform: translate(-40%, -45%);
+    width: 80%;
+  }
+  @include mq(md){
+    left: 40%;
+    top: 40%;
+    transform: translage(-40%, -45%);
+  }
 }
 
 .modalClose {

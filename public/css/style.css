@@ -654,6 +654,23 @@ img {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 980px) {
+  .modal .inner {
+    -webkit-transform: translate(-40%, -45%);
+            transform: translate(-40%, -45%);
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal .inner {
+    left: 40%;
+    top: 40%;
+    -webkit-transform: translage(-40%, -45%);
+            transform: translage(-40%, -45%);
+  }
+}
+
 .modalClose {
   float: right;
   font-size: 3.8rem;
@@ -769,14 +786,48 @@ img {
   width: 98rem;
 }
 
+@media screen and (max-width: 980px) {
+  .p-hero {
+    width: 100%;
+  }
+}
+
 .p-hero-title {
   font-size: 2.4rem;
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 980px) {
+  .p-hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-hero-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .p-hero-text {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 980px) {
+  .p-hero-text {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .p-hero-list-wrapper {
@@ -786,6 +837,12 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .p-hero-list {
+    font-size: 1.2rem;
+  }
 }
 
 .p-form {
