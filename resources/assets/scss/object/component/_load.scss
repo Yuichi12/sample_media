@@ -9,6 +9,8 @@
   z-index: 3;
   &-img {
     width: 60px;
-    
+  }
+  @include mq(md){
+    display: none;
   }
 }

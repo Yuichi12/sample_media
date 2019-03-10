@@ -626,6 +626,12 @@ img {
   width: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .c-load {
+    display: none;
+  }
+}
+
 .modal {
   position: absolute;
   width: 100%;
