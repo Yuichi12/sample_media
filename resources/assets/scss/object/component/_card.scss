@@ -5,12 +5,23 @@
   margin-bottom: $space_m;
   padding: 5px;
   width: 100%;
+  @include mq(md){
+    padding: 3px;
+  }
 
   &__thumbnail {
     height: 15rem;
     margin-right: $space_l;
     position: relative;
     width: 15rem;
+    @include mq(lg){
+      max-height: 10rem;
+      max-width: 10rem;
+    }
+    @include mq(sm){
+      max-height: 5rem;
+      max-width: 5rem;
+    }
   }
 
   &__img {
@@ -37,15 +48,39 @@
     font-size: $font-size_xl;
     font-weight: 600;
     margin-bottom: $space_s;
+    @include mq(lg){
+      font-size: $font-size_m;
+    }
+    @include mq(sm){
+      font-size: $font-size_s;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+  }
+
+  &__content {
+    @include mq(lg){
+      font-size: $font-size_s;
+    }
+    @include mq(sm){
+      display: none;
+    }
   }
 
   &__footer {
     bottom: 0;
     display: flex;
     position: absolute;
+    @include mq(sm){
+      font-size: 5px;
+      letter-spacing: 1px;
+    }
   }
 
   &__author {
     margin-right: $space_xl;
+    @include mq(sm){
+      margin-right: $space_m;
+    }
   }
 }

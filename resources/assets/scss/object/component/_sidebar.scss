@@ -1,17 +1,31 @@
 .c-sidebar {
   width: 20%;
+  @include mq(lg){
+    width: 30%;
+  }
+  @include mq(md){
+    &:last-child{
+      width: 0;
+    }
+  }
 }
 
 .c-side {
   &-prof {
     margin-right: $space_xl;
     @include mq(md){
-      display: none;
+      display: black;
     }
 
     &__name {
-      font-size: $space_xl;
+      font-size: $font-size_xl;
       margin-bottom: $space_l;
+      @include mq(lg){
+        font-size: $font-size_l;
+      }
+      @include mq(sm){
+        font-size: $font-size_m;
+      }
     }
 
     &__header {
@@ -23,6 +37,23 @@
       border-radius: 50%;
       height: 15rem;
       width: 15rem;
+      @include mq(lg){
+        max-height: 10rem;
+        max-width: 10rem;
+      }
+      @include mq(sm){
+        max-height: 5rem;
+        max-width: 5rem;
+      }
+    }
+    &__text {
+      @include mq(lg){
+        font-size: $font-size_m;
+      }
+      @include mq(sm){
+        font-size: $font-size_s;
+        letter-spacing: 1px;
+      }
     }
   }
 
@@ -31,6 +62,9 @@
     border-left: 2px solid #000;
     border-right: 2px solid #000;
     margin-left: $space_xl;
+    @include mq(lg){
+      font-size: $font-size_m;
+    }
     @include mq(md){
       display: none;
     }
@@ -38,6 +72,9 @@
     &-item {
       border-bottom: 2px solid #000;
       padding: 1rem 2rem;
+      @include mq(lg){
+        padding: 0.5rem 1rem;
+      }
     }
   }
 }
