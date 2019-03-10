@@ -23,8 +23,9 @@
       @include mq(lg){
         font-size: $font-size_l;
       }
-      @include mq(sm){
+      @include mq(md){
         font-size: $font-size_m;
+        margin-bottom: $space_s;
       }
     }
 
