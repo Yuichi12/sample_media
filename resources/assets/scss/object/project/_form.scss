@@ -7,11 +7,17 @@
   margin-right: auto;
   padding-bottom: $space_3l;
   width: 60%;
+  @include mq(md){
+    width: 90%;
+  }
 
   &-wrapper {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    @include mq(sm){
+      width: 90%;
+    }
   }
 
   &-group {
@@ -19,6 +25,8 @@
   }
 
   &-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
     display: block;
     font-size: $font-size_xl;
@@ -73,6 +81,9 @@
   .p-form {
     &-fluid {
       width: 50%;
+      @include mq(md){
+        width: 100%;
+      }
     }
 
     &-wrapper {
@@ -100,6 +111,9 @@
   .p-pass-edit {
     &-wrapper {
       width: 60%;
+      @include mq(md){
+        width: 80%;
+      }
     }
   }
 }

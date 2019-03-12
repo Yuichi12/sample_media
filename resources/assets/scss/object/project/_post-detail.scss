@@ -3,14 +3,29 @@
   &__header {
     display: flex;
     padding-left: $space_3l;
+    @include mq(sm){
+      display: block;
+    }
   }
 
   &__date {
     margin-right: $space_3l;
+    @include mq(md){
+      font-size: $font-size_l;
+    }
+  }
+
+  &__author {
+    @include mq(md){
+      font-size: $font-size_l;
+    }
   }
 
   &__edit-btns {
     margin-left: auto;
+    @include mq(md){
+      font-size: $font-size_l;
+    }
   }
 
   &__title {
@@ -18,6 +33,9 @@
     font-weight: 600;
     margin-bottom: $space_3l;
     text-align: center;
+    @include mq(md){
+      margin-top: $space_xl;
+    }
   }
 
   &__thum {
@@ -25,10 +43,18 @@
     margin-left: auto;
     margin-right: auto;
     width: 60rem;
+    @include mq(md){
+      width: 90%;
+    }
   }
 
   &__content {
     font-size: $font-size_xl;
+    @include mq(md){
+      font-size: $font-size_l;
+      padding-left: $space_m;
+      padding-right: $space_m;
+    }
   }
 
   &-backBtn {

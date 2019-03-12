@@ -18,12 +18,22 @@
   position: relative;
   text-align: center;
   width: 40rem;
+  @include mq(md){
+    height: 15rem;
+    line-height: 15rem;
+    width: 24rem;
+  }
 
   &.c-avatar {
     border-radius: 50%;
     height: 25rem;
     line-height: 25rem;
     width: 25rem;
+    @include mq(md){
+      height: 17rem;
+      line-height: 17rem;
+      width: 17rem;
+    }
 
     .c-prev-img {
       border-radius: 50%;

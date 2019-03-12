@@ -4,6 +4,8 @@
     width: 30%;
   }
   @include mq(md){
+    margin-bottom: $space_3l;
+    width: 100%;
     &:last-child{
       width: 0;
     }
@@ -41,10 +43,6 @@
       @include mq(lg){
         max-height: 10rem;
         max-width: 10rem;
-      }
-      @include mq(sm){
-        max-height: 5rem;
-        max-width: 5rem;
       }
     }
     &__text {

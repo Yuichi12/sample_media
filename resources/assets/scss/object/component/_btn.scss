@@ -1,12 +1,16 @@
 .c-btn {
   &-submit {
-
+    background: #fff;
     display: block;
     font-size: $font-size_l;
     padding: 5px 10px 5px;
     margin-left: auto;
     margin-right: auto;
     width: 10rem;
+    &:hover {
+      background: red;
+      color: #fff;
+    }
   }
 }
 
