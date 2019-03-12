@@ -18,5 +18,11 @@
     font-size: $font-size_3l;
     margin-bottom: $space_3l;
     text-align: center;
+    @include mq(md){
+      font-size: $font-size_xxl;
+    }
+    @include mq(md){
+      font-size: $font-size_xl;
+    }
   }
 }

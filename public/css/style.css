@@ -247,6 +247,18 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .c-container__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-container__title {
+    font-size: 2.4rem;
+  }
+}
+
 .c-menu-trigger {
   display: none;
   -webkit-box-sizing: border-box;
