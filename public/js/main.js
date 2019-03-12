@@ -10633,12 +10633,9 @@ function confirm() {
 
 
 function load() {
-  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function () {
-    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(window).on('load', function () {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-load-bg').hide();
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-hero-anime').addClass('animated rollIn');
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-show-header').addClass('animated fadeIn delay-1s');
-    });
+
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(window).on('load', function () {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.js-load-bg').hide();
   });
 }
 
