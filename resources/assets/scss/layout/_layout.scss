@@ -2,6 +2,9 @@
   &-3column {
     display: flex;
     justify-content: center;
+    @include mq(md){
+      display: block;
+    }
   }
 
   &-2column {
@@ -10,6 +13,9 @@
 
     #main {
       margin-left: 20%;
+      @include mq(md){
+        margin-left: initial;
+      }
     }
   }
 }
@@ -18,5 +24,8 @@
   width: 60rem;
   @include mq(lg){
     max-width: 70%;
+  }
+  @include mq(md){
+    max-width: 100%;
   }
 }
